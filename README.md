@@ -11,7 +11,7 @@ This project implements a **half subtractor** using the **VSDSquadron Mini** (CH
 ## **Required Components**
 
 - **VSDSquadron Mini (CH32V003F4U6)**
-- **3 Push Buttons** (Inputs: A, B, Reset)
+- **2 Push Buttons** (Inputs: A, B)
 - **2 LEDs** (Outputs: Difference, Borrow)
 - **3 Pull-down Resistors (10kΩ)** (For push buttons)
 - **2 Current Limiting Resistors (220Ω - 1kΩ)** (For LEDs)
@@ -24,7 +24,6 @@ This project implements a **half subtractor** using the **VSDSquadron Mini** (CH
 | -------------------------- | ------------------------ |
 | **Push Button A**          | PD0                      |
 | **Push Button B**          | PD1                      |
-| **Push Button Reset**      | PD4                      |
 | **LED for Difference (D)** | PD2                      |
 | **LED for Borrow (B)**     | PD3                      |
 
@@ -33,8 +32,8 @@ This project implements a **half subtractor** using the **VSDSquadron Mini** (CH
 1. **Push Buttons (A, B, Reset)**
 
    - Connect **one side of each button to 3.3V**.
-   - Connect the **other side of A to PD0, B to PD1, and Reset to PD4**.
-   - Use **10kΩ resistors** to pull-down PD0, PD1, and PD4 to **GND**.
+   - Connect the **other side of A to PD0, B to PD1**
+   - Use **10kΩ resistors** to pull-down PD0 and PD1 **GND**.
 
 2. **LED Outputs (D, B)**
 
@@ -51,5 +50,4 @@ This project implements a **half subtractor** using the **VSDSquadron Mini** (CH
 | 0                 | 1       | ON                     | ON                 |
 | 1                 | 0       | ON                     | OFF                |
 | 1                 | 1       | OFF                    | OFF                |
-| **Reset Pressed** | **Any** | OFF                    | OFF                |
 
